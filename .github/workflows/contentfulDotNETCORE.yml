@@ -25,7 +25,7 @@ jobs:
       run: dotnet restore
 
     - name: Build
-      run: dotnet build Release
+      run: dotnet build --configuration Release
 
     - name: Build and Push Docker image
       uses: mr-smithers-excellent/docker-build-push@v5
@@ -36,6 +36,7 @@ jobs:
         username: ${{ secrets.DOCKER_USERNAME }}
         password: ${{ secrets.DOCKER_PASSWORD }}
 
+    
     
 
     
