@@ -1,0 +1,27 @@
+name: contentful .NET CORE
+
+on:
+  push:
+    branches:  
+      - "**" 
+  pull_request:
+    branches: 
+      - "**"
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+    - name: Setup .NET core
+    - uses: actions/setup-dotnet@v3
+      with:
+        dotnet-version: '3.1.x'
+    - name: Install Dependencies
+    - run: dotnet restore
+    - name: Build
+    - run: dotnet build Release
+    - name: Test
+      run: dotnet test --no-build --verbosity normal
