@@ -1,0 +1,20 @@
+﻿@using Contentful.Core.Models
+
+@model ContentfulCollection<MusiciansList>
+
+
+
+<div class="container row pt-3 align-between d-flex justify-content-between">
+    @foreach (var musicians in Model)
+    {
+        <div class="card col-2 m-1 p-0 text-center" style="width: 18rem;">
+            <img src="@musicians.Picture.File.Url" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">@musicians.Name</h5>
+            </div>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">@musicians.Instrument</li>
+            </ul>
+        </div>
+    }
+</div>

@@ -1,0 +1,7 @@
+/Users/thomasverbruggen/Projects/MusicianList/MusicianList/obj/Release/netcoreapp3.1/MusicianList.csproj.AssemblyReference.cache
+/Users/thomasverbruggen/Projects/MusicianList/MusicianList/obj/Release/netcoreapp3.1/MusicianList.GeneratedMSBuildEditorConfig.editorconfig
+/Users/thomasverbruggen/Projects/MusicianList/MusicianList/obj/Release/netcoreapp3.1/MusicianList.AssemblyInfoInputs.cache
+/Users/thomasverbruggen/Projects/MusicianList/MusicianList/obj/Release/netcoreapp3.1/MusicianList.AssemblyInfo.cs
+/Users/thomasverbruggen/Projects/MusicianList/MusicianList/obj/Release/netcoreapp3.1/MusicianList.csproj.CoreCompileInputs.cache
+/Users/thomasverbruggen/Projects/MusicianList/MusicianList/obj/Release/netcoreapp3.1/MusicianList.MvcApplicationPartsAssemblyInfo.cs
+/Users/thomasverbruggen/Projects/MusicianList/MusicianList/obj/Release/netcoreapp3.1/MusicianList.MvcApplicationPartsAssemblyInfo.cache
