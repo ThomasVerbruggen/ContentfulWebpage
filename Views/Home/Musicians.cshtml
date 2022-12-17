@@ -8,7 +8,7 @@
     @foreach (var musicians in Model)
     {
         <div class="card col-2 m-1 p-0 text-center" style="width: 18rem;">
-            <img src="@musicians.Picture.File.Url" class="card-img-top" alt="...">
+            <img src="@musicians.Picture.File.Url" class="card-img-top" alt="@musicians.Picture.Title">
             <div class="card-body">
                 <h5 class="card-title">@musicians.Name</h5>
             </div>
