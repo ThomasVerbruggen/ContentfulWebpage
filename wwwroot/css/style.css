@@ -1,0 +1,42 @@
+body{
+    background-color: #555;
+    background-image: url(../images/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: multiply;
+}
+
+p, h1{
+    color: #fff;
+}
+
+.card{
+    border: none;
+}
+
+h1{
+    color: #dfdfdf;
+}
+
+span{
+    font-family: 'Teko', sans-serif;
+    font-size: 300px;
+    text-transform: capitalize;
+    animation: glow 2s ease-in-out infinite alternate;
+    color: white;
+    line-height: 300px;
+}
+
+@keyframes glow {
+    from {
+      text-shadow: 0 0 20px #2d9da9;
+    }
+    to {
+      text-shadow: 0 0 50px #34b3c1, 0 0 30px #4dbbc7;
+    }
+}
+
+.extra-margin{
+    margin-top: 250px;
+}
