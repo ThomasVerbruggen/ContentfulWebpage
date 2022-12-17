@@ -1,0 +1,42 @@
+name: contentful .NET CORE
+
+on:
+  push:
+    branches:  
+      - "**" 
+  pull_request:
+    branches: 
+      - "**"
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+
+    - name: Setup .NET core
+      uses: actions/setup-dotnet@v3
+      with:
+        dotnet-version: '3.1.x'
+
+    - name: Install Dependencies
+      run: dotnet restore
+
+    - name: Build
+      run: dotnet build --configuration Release
+
+    - name: Build and Push Docker image
+      uses: mr-smithers-excellent/docker-build-push@v5
+      with:
+        image: thomi2003/contentful-webpage
+        tags: music, latest
+        registry: docker.io
+        username: ${{ secrets.DOCKER_USERNAME }}
+        password: ${{ secrets.DOCKER_PASSWORD }}
+
+    
+    
+
+    
